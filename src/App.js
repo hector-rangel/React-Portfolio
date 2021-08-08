@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import About from './components/About';
+import ContactForm from './components/Contact';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  // use state to set the default value for current page to "about"
+  const [currentPage, handlePageChange] = useState('About');
 
+  // renderPage method uses switch statement to render the appropriate current page
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'About':
+        return <About />;
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact':
+        return <ContactForm />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
+
+  return (
+    <React.Fragment>
+      {/* <Header /> */}
+      <div>
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        <div>{renderPage(currentPage)}</div>
+      </div>
+      <Footer />
+    </React.Fragment>
+
+  )
+}
 export default App;
