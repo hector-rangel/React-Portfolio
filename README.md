@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# React Portfolio
+# Description
+A Portfolio that showcases my projects and skills built with react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tasks
+GIVEN a single-page application portfolio for a web developer
 
-## Available Scripts
+WHEN I load the portfolio
 
-In the project directory, you can run:
+THEN I am presented with a page containing a header, a section for content, and a footer
 
-### `npm start`
+WHEN I view the header
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+WHEN I view the navigation titles
 
-### `npm test`
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+WHEN I click on a navigation title
 
-### `npm run build`
+THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+WHEN I load the portfolio the first time
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+THEN the About Me title and section are selected by default
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+WHEN I am presented with the About Me section
 
-### `npm run eject`
+THEN I see a recent photo or avatar of the developer and a short bio about them
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+WHEN I am presented with the Portfolio section
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+WHEN I am presented with the Contact section
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+THEN I see a contact form with fields for a name, an email address, and a message
 
-## Learn More
+WHEN I move my cursor out of one of the form fields without entering text
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+THEN I receive a notification that this field is required
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+WHEN I enter text into the email address field
 
-### Code Splitting
+THEN I receive a notification if I have entered an invalid email address
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+WHEN I am presented with the Resume section
 
-### Analyzing the Bundle Size
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+WHEN I view the footer
 
-### Making a Progressive Web App
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Snapshots
+![image](https://user-images.githubusercontent.com/79381847/128652951-6fd2559a-4478-4019-b0e5-2c96d927b2d7.png)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Deployed Application
+https://hector-rangel.github.io/react-portfolio/
