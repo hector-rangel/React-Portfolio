@@ -3,7 +3,6 @@ import { validateEmail } from '../../utils/helper'
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
@@ -57,6 +56,14 @@ function ContactForm() {
                 )}
                 <button data-testid="button" type="submit">Submit</button>
             </form>
+            <div>
+                <h1>Contact Information</h1>
+                <div>
+                    Email:Hector.rangeljr@yahoo.com
+                    <br></br>
+                    Phone: 512-995-1105
+                </div>
+            </div>
         </section>
     );
 }

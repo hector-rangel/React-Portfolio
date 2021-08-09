@@ -8,11 +8,6 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  // use state to set the default value for current page to "about"
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
   const [currentPage, handlePageChange] = useState('About');
 
   // renderPage method uses switch statement to render the appropriate current page

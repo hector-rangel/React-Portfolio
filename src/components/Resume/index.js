@@ -4,7 +4,9 @@ function Resume() {
     return (
         <section>
             <h1>Resume</h1>
-            <a href="../../assets/Hector Resume.pdf" alt="">Download Resume</a>
+            {/* just a view resume still need to figure out how to download it. couldn't make a href with assets work */}
+            <a href="https://docs.google.com/document/d/1QEHCDVIsNCKJezwJ1qekIsFGfnmsEO7j/edit" alt="">View Resume</a>
+            <br></br>
             <span>Front End Proficiencies</span>
             <ul>
                 <li>HTML</li>
